@@ -5,7 +5,7 @@
 .wrap{
 	width:70%;
 	margin:0px auto;
-	height:1460px;
+	height:1505px;
 	border:2px solid red;
 	border-radius:10px;
 	box-shadow:5px 5px 5px #888888;
@@ -88,7 +88,8 @@ h1{
 	background-color:#696969;
 }
 .content{
-	
+	width:90%;
+	margin:0px auto;
 }
 .box{
 	height:;
@@ -107,6 +108,15 @@ textarea{
 	height:100px;
 	margin-top:10px;
 }
+.content #count{
+	width:80px;
+	height:30px;
+	background-color:black;
+	color:white;
+	font-size:15px;
+	border:1px solid black;
+	margin:5px 45%;
+}
 .footer{
 	background-color:black;
 	color:gray;
@@ -118,7 +128,6 @@ textarea{
 .footer p{
 	margin-left:100px;
 	font-size:15px;
-
 }
 .footer a{
 	text-decoration:none;
