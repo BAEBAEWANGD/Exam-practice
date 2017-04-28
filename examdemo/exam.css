@@ -3,7 +3,7 @@
 	padding:0px;
 }
 .wrap{
-	width:60%;
+	width:70%;
 	margin:0px auto;
 	height:1460px;
 	border:2px solid red;
@@ -14,7 +14,7 @@
 	background-color:white;
 	position:absolute;
 	top:20px;
-	right:350px;
+	right:250px;
 	width:100px;
 	height:100px;
 }
@@ -24,7 +24,7 @@
 	height:100px;
 	transform:rotate(20deg);
 	position:absolute;
-	top:650px;
+	top:580px;
 	left:400px;
 }
 .logo2{
@@ -33,37 +33,71 @@
 	height:100px;
 	transform:rotate(20deg);
 	position:absolute;
-	top:1050px;
+	top:880px;
 	left:400px;
 }
 h1{
-	padding:20px 0px;
+	margin:12px auto;
+	background-color:#7B68EE;
+	width:330px;
+	height:50px;
+	padding:30px;
 }
 .header{
 	font-weight:bold;
-	margin-left:50px;
+}
+.header ul{
+	list-style-type:none;
+	display:flex;
+	width:90%;
+	margin:10px auto;
+	border:1px solid gray;
+	height:45px;
+	line-height:45px;
+	box-sizing:border-box;
+	
+}
+.header li{
+	display:inline;
+	flex:1;
+	padding-left:30px;
+	background-color:gray;
+}
+.header li:hover{
+	background-color:#696969;
 }
 .header input{
 	border-radius:10px;
 	height:30px;
-	width:150px;
+	width:100px;
 	margin-top:5px;
 }
 .table{
 	border-collapse:collapse;
-	width:650px;
+	width:90%;
 	height:50px;
-	margin:20px 0px;
+	margin:0px auto;
 }
 .head{
-	margin:20px 0px;
 	font-weight:bold;
+	background-color:gray;
+	height:35px;
+	line-height:35px;
+}
+.head:hover{
+	background-color:#696969;
 }
 .content{
-	margin-left:50px;
+	
+}
+.box{
+	height:;
+	width:90%;
+	margin:5px auto;
+	border:1px solid gray;
 }
 .article{
-	margin-left:40px;
+	margin:10px 0px 20px 50px;
 }
 .article input{
 	margin-left:5px;
