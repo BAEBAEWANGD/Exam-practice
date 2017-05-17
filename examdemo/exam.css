@@ -35,17 +35,17 @@
 	top:880px;
 	left:400px;
 }
-.header h1{
+#header h1{
 	margin:12px auto;
 	background-color:#7B68EE;
 	width:330px;
 	height:50px;
 	padding:30px;
 }
-.header{
+#header{
 	font-weight:bold;
 }
-.header ul{
+#header ul{
 	list-style-type:none;
 	display:flex;
 	width:90%;
@@ -56,22 +56,22 @@
 	box-sizing:border-box;
 	
 }
-.header li{
+#header li{
 	display:inline;
 	flex:1;
 	padding-left:30px;
 	background-color:gray;
 }
-.header li:hover{
+#header li:hover{
 	background-color:#696969;
 }
-.header input{
+#header input{
 	border-radius:10px;
 	height:30px;
 	width:100px;
 	margin-top:5px;
 }
-.table{
+#table{
 	border-collapse:collapse;
 	width:80%;
 	height:50px;
@@ -86,7 +86,7 @@
 .head:hover{
 	background-color:#696969;
 }
-.content{
+#content{
 	width:90%;
 	margin:0px auto;
 }
@@ -102,12 +102,12 @@
 .article input{
 	margin-left:5px;
 }
-textarea{
+#text{
 	width:200px;
 	height:100px;
 	margin-top:10px;
 }
-.content #count{
+#content #count{
 	width:80px;
 	height:30px;
 	background-color:black;
@@ -116,7 +116,7 @@ textarea{
 	border:1px solid black;
 	margin:5px 45%;
 }
-.content #count:hover{
+#content #count:hover{
 	color:white;
 }
 .footer{
@@ -137,4 +137,34 @@ textarea{
 }
 .footer a:hover{
 	color:white;
+}
+
+
+#modal{
+	position:fixed;
+	left:500px;
+	top:30px;
+	width:400px;
+	height:150px;
+	background-color:#E0E0E0;
+	border-radius:10px;
+	display:none;
+}
+.modal-header{
+	height:30px;
+	background-color:#696969;
+	border-radius:10px 10px 0px 0px;
+}
+.modal-content{
+	margin:0px 0px 10px 80px;
+}
+#modal button{
+	width:100px;
+	height:30px;
+	font-size:20px;
+	background-color:blue;
+	border:1px blue solid;
+	color:white;
+	border-radius:8px;
+	margin:10px 0px 0px 280px;
 }

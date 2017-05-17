@@ -3,23 +3,22 @@
 <head>
 	<title>exam</title>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="./exam.css">
-    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="./exam.css"> 
 </head>
 <body>
 	<div class="wrap">
 	<a href="http://www.xiyou.edu.cn/"><img alt="error" class="img" src="D:/WEB/images/xiyou.jpg"/> </a>
 	<img alt="error" class="logo1" src="D:/WEB/images/微信图片_20170429170626.jpg"/>
 	<img alt="error" class="logo2" src="D:/WEB/images/微信图片_20170429170626.jpg"/>
-			<div class="header"> 
+			<div id="header"> 
 			<h1>统一建模语言理论试题</h1>
 			<ul>
 			<li>考试科目：统一建模语言</li>
 			<li>时间：100分钟</li>
-			<li>得分</li>
+			<li>得分：</li>
 			</ul>
 			<div> 
-				<table class="table" border="1"> 
+				<table id="table" border="1"> 
 				<tr>
 				<th>题号</th>
 				<th>一</th>
@@ -29,7 +28,7 @@
 				<th>五</th>
 				<th>总分</th>
 				</tr>
-				<tr>
+				<tr id="tr1">
 				<th>满分</th>
 				<th>20</th> 
 				<th>20</th> 
@@ -38,7 +37,7 @@
 				<th>20</th> 
 				<th rowspan="2">&nbsp;</th> 
 				</tr>
-				<tr> 
+				<tr id="tr2"> 
 				<th>得分</th>
 				<th>&nbsp;</th> 
 				<th>&nbsp;</th> 
@@ -49,12 +48,12 @@
 				</table>
 			</div>
 			<ul>
-			<li>班级（必填）：<input placeholder="广电1501" name="class" type="text" required autofocus/></li>
-			<li>学号（必填）：<input placeholder="03155027" name="number" type="text" required/></li>
-			<li>姓名（必填）：<input placeholder="王娟" name="name" type="text" required/></li>
+			<li>班级（必填）：<input placeholder="广电1501" name="class" type="text"/></li>
+			<li>学号（必填）：<input placeholder="03155027" name="number" type="text"/></li>
+			<li>姓名（必填）：<input placeholder="王娟" name="name" type="text"/></li>
 			</ul>
 			</div> 
-			<div class="content"> 
+			<div id="content"> 
 			  <div class="box">
 					<div class="head">一、填空题（每题5分，共20分）</div>
 					<div class="article">
@@ -125,7 +124,7 @@
 				<ol>
 				<li>简述什么是模型以及模型的表现形式。</li> 
 				</ol>
-				<textarea></textarea> 
+				<textarea id="text"></textarea> 
 				</div>
 			</div>
 			<input type="button" id="count" name="count" value="计算分数"/>
@@ -134,6 +133,13 @@
 			<p>Copyright © <a href="http://www.xiyou.edu.cn/" title="西安邮电大学">西安邮电大学</a> 第一页（共一页） <a href="#">WangJuan</a></p>
 			</div>
 	</div>
+<!-- 弹出框设计 -->
+	<div id="modal">
+		<div class="modal-header"></div> 
+		<div class="modal-content"><b>This page says:</b><br/>请检查并填写必填信息！</div>
+		<button id="close">ok</button>
+	</div>
+
 	<script type="text/javascript" src="./exam.js"></script>
 	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
         <script type="text/javascript" src="D:/WEB/jQuery库/jquery-3.1.1/jquery-3.1.1.min.js"></script>

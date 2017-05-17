@@ -4,7 +4,6 @@
 <head>
 	<title>exam1</title>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="D:/WEB/bootstrap库3.3.7/bootstrap-3.3.7-dist.js/css/bootstrap.min.css"/>
 </head>
 <body>
@@ -49,19 +48,19 @@
 			    <form role="form">
 			    <div class="has-warning form-group has-feedback">
 			    <label for="class" class="control-label">班级（必填）：</label>
-			    <input id="class" class="form-control input-sm" placeholder="广电1501" name="class" type="text" required autofocus/>
+			    <input style="width:150px;" id="class" class="form-control input-sm" placeholder="广电1501" name="class" type="text"/>
 			    <span class="help-block">请输入正确信息</span>
 			    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
 			    </div>
 			    <div class="has-warning form-group has-feedback">
 				<label for="number" class="control-label">学号（必填）：</label>
-				<input id="number" class="form-control input-sm" placeholder="03155027" name="number" type="text" required/>
+				<input style="width:150px;" id="number" class="form-control input-sm" placeholder="03155027" name="number" type="text" required/>
 				<span class="help-block">请输入正确信息</span>
 				<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
 				</div>
 				<div class="has-warning form-group has-feedback">
 				<label for="name" class="control-label">姓名（必填）：</label>
-				<input class="form-control input-sm" placeholder="王娟" id="name" name="name" type="text" required/>
+				<input style="width:150px;" class="form-control input-sm" placeholder="王娟" id="name" name="name" type="text" required/>
 				<span class="help-block">请输入正确信息</span>
 				<span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
 				</div>
@@ -75,21 +74,21 @@
 					<li><p>UML的中文全称是：<br/>
 					<div class="has-warning form-group">
 					<label for="answer" class="control-label"></label>
-					<input class="form-control input-sm" type="text" id="answer" name="answer"/>
+					<input style="width:300px;" class="form-control input-sm" type="text" id="answer" name="answer"/>
 					</div>
 					</p></li>
 					<li><p>对象最突出的特征是：<br/>
 					<div class="has-warning form-group">
 					<label for="answer1" class="control-label"></label>
-					<input type="text" id="answer1" class="form-control input-sm"/> 
+					<input style="width:150px;" type="text" id="answer1" class="form-control input-sm"/> 
 					</div>
 					<div class="has-warning form-group">
 					<label for="answer2" class="control-label"></label>
-					<input type="text" id="answer2" class="form-control input-sm"/> 
+					<input style="width:150px;" type="text" id="answer2" class="form-control input-sm"/> 
 					</div> 
 					<div class="has-warning form-group">
 					<label for="answer3" class="control-label"></label>
-					<input type="text" id="answer3" class="form-control input-sm"/> 
+					<input style="width:150px;" type="text" id="answer3" class="form-control input-sm"/> 
 					</div> 
 					</p></li>
 					</ol>
@@ -211,14 +210,14 @@
 				<ol>
 				<li><p>用例图只是用于和用户的交流和沟通的，用于确定需求。
 				<div class="form-group"> 
-				<label class="radio-inline"><input name="or" type="radio">对</label>
-				<label class="radio-inline"><input name="or" type="radio">错</label> 
+				<label class="radio-inline"><input name="or" type="radio"><span class="glyphicon glyphicon-ok"></span></label>
+				<label class="radio-inline"><input name="or" type="radio"><span class="glyphicon glyphicon-remove"></span></label> 
 				</div> 
 				</p></li>
 				<li><p>在状态图中，终止状态允许在状态图中有任意多个。
 				<div class="form-group"> 
-				<label class="radio-inline"><input name="ye" type="radio">对</label>
-				<label class="radio-inline"><input name="ye" type="radio">错</label> 
+				<label class="radio-inline"><input name="ye" type="radio"><span class="glyphicon glyphicon-ok"></span></label>
+				<label class="radio-inline"><input name="ye" type="radio"><span class="glyphicon glyphicon-remove"></span></label> 
 				</div> 
 				</p></li>
 				</ol>
@@ -238,7 +237,35 @@
 			<p><i>Copyright © </i><a href="http://www.xiyou.edu.cn/" title="西安邮电大学"><strong>西安邮电大学</strong></a> <i>第一页（共一页）</i> <a href="#"><strong>WangJuan</strong></a></p>
 			</div>
 	</div>
-	<script type="text/javascript" src="./exam.js"></script>
+
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">This page says:</h4>
+			</div>
+			<div class="modal-body">
+				<p>请检查并填写必填信息！</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-transition.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/2.3.1/js/bootstrap-modal.js"></script>
+<script>
+  $(function(){
+    $(".btn").click(function(){
+      $("#mymodal").modal("toggle");
+    });
+  });
+</script>
 	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
         <script type="text/javascript" src="D:/WEB/jQuery库/jquery-3.1.1/jquery-3.1.1.min.js"></script>
         <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
